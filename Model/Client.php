@@ -18,19 +18,19 @@ class Client
      */
     protected $config;
     /**
-     * @var \Zend\Http\HeadersFactory
+     * @var \Laminas\Http\HeadersFactory
      */
     protected $headersFactory;
     /**
-     * @var \Zend\Http\RequestFactory
+     * @var \Laminas\Http\RequestFactory
      */
     protected $requestFactory;
     /**
-     * @var \Zend\Stdlib\ParametersFactory
+     * @var \Laminas\Stdlib\ParametersFactory
      */
     protected $parametersFactory;
     /**
-     * @var \Zend\Http\ClientFactory
+     * @var \Laminas\Http\ClientFactory
      */
     protected $clientFactory;
 
@@ -39,17 +39,17 @@ class Client
      * Client constructor
      *
      * @param \AuthorizeNet\Webhooks\Model\Config $config
-     * @param \Zend\Http\HeadersFactory $headersFactory
-     * @param \Zend\Http\RequestFactory $requestFactory
-     * @param \Zend\Stdlib\ParametersFactory $parametersFactory
-     * @param \Zend\Http\ClientFactory $clientFactory
+     * @param \Laminas\Http\HeadersFactory $headersFactory
+     * @param \Laminas\Http\RequestFactory $requestFactory
+     * @param \Laminas\Stdlib\ParametersFactory $parametersFactory
+     * @param \Laminas\Http\ClientFactory $clientFactory
      */
     public function __construct(
         \AuthorizeNet\Webhooks\Model\Config $config,
-        \Zend\Http\HeadersFactory $headersFactory,
-        \Zend\Http\RequestFactory $requestFactory,
-        \Zend\Stdlib\ParametersFactory $parametersFactory,
-        \Zend\Http\ClientFactory $clientFactory
+        \Laminas\Http\HeadersFactory $headersFactory,
+        \Laminas\Http\RequestFactory $requestFactory,
+        \Laminas\Stdlib\ParametersFactory $parametersFactory,
+        \Laminas\Http\ClientFactory $clientFactory
     ) {
     
         $this->config = $config;
